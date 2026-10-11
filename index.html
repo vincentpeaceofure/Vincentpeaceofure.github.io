@@ -41,13 +41,19 @@
         }
 
         .profile-section { text-align: center; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
-        .avatar {
-            width: 90px; height: 90px; border-radius: 50%;
-            background: linear-gradient(135deg, var(--sage-primary), var(--accent-gold));
-            display: flex; align-items: center; justify-content: center;
-            font-size: 2rem; font-weight: 800; color: #121811; margin: 0 auto 1rem;
-            box-shadow: 0 0 20px rgba(140, 163, 110, 0.3);
+        
+        /* Profile Image Style */
+        .avatar-img {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--sage-primary);
+            margin: 0 auto 1rem;
+            box-shadow: 0 0 20px rgba(140, 163, 110, 0.4);
+            display: block;
         }
+
         .profile-name { font-size: 1.25rem; font-weight: 700; color: var(--text-primary); }
         .profile-title { font-size: 0.85rem; color: var(--sage-light); font-weight: 500; margin-top: 0.25rem; }
 
@@ -132,7 +138,8 @@
     <sidebar>
         <div>
             <div class="profile-section">
-                <div class="avatar">POV</div>
+                <!-- GitHub Profile Picture Directly Linked -->
+                <img src="https://github.com/vincentpeaceofure.png" alt="Peace Ofure Vincent" class="avatar-img">
                 <div class="profile-name">Peace O. Vincent</div>
                 <div class="profile-title">Data Analyst</div>
             </div>
